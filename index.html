@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
+    <title>Registro Candidatos</title>
+</head>
+<body>
+
+
+    <div class="section container">
+        <div class="row">
+          <article class="col m8 ">
+            <h3 class="center-align">Registro Candidatos Centro América</h3>
+            <div class="card">
+
+
+              <form action="javascript:void(0);" name="frmmat" id="formRuta">
+                <div class="input-field col m6">
+                  <i class="material-icons prefix">perm_identity</i>
+                  <label for="name"> Nombre</label>
+                  <input type="text"  id="name" class="validate" required>
+                </div>
+                
+                
+                <div class="input-field col m6">
+                  <i class="material-icons prefix">person_pin</i>
+                  <label for="surname" >Apellido</label>
+                  <input type="text"  id="surname" class="validate" required>
+                </div> 
+
+
+                <div class="input-field col m12">
+                    <i class="material-icons prefix">mode_edit</i>
+                  <select id="genero" class="no-autoinit validate" required >
+                    <option value="" disabled selected>Seleccionar Genero</option>
+                    <option value="Masculino" >Masculino</option>
+                    <option value="Femenino" >Femenino</option>
+                    <option value="Otro" >Otro</option>
+                  </select>
+                  <label for="genero">Genero</label>
+                </div>
+                   
+                <div class="input-field col m6 ">
+                  <i class="material-icons prefix">mode_edit</i>
+                  <select id="nacimiento" class="no-autoinit validate" required >
+                    <option value="" disabled selected>Seleccionar País</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Panamá">Panamá</option>
+                    <option value="Belice">Belice</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                  </select>
+                  <label for="nacimiento">País de Nacimiento</label>
+                </div>
+
+                <div class="input-field col m6 ">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <select id="depa" class="no-autoinit validate" required >
+                      <option value="" disabled selected>Seleccionar Departamento</option>
+                      <option value="Ahuachapán" >Ahuachapán</option>
+                      <option value="Cabañas" >Cabañas</option>
+                      <option value="Chalatenango" >Chalatenango</option>
+                      <option value="Cuscatlán">Cuscatlán</option>
+                      <option value="La Libertad">La Libertad</option>
+                      <option value="La Paz">La Paz</option>
+                      <option value="La Unión">La Unión</option>
+                      <option value="Morazán">Morazán</option>
+                      <option value="San Miguel">San Miguel</option>
+                      <option value="San Salvador">San Salvador</option>
+                      <option value="San Vicente">San Vicente</option>
+                      <option value="Santa Ana">Santa Ana</option>
+                      <option value="Sonsonate">Sonsonate</option>
+                      <option value="Usulután">Usulután</option>
+                    </select>
+                    <label for="depa">Departamento de residencia </label>
+                  </div>
+                
+                <div class="input-field col m6">
+                  <i class="material-icons prefix">mode_edit</i>
+                  <!--class="initialized"-->
+                  <select id="residencia" class="no-autoinit validate" required >
+                    <option value="" disabled selected>Seleccionar una opción</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Panamá">Panamá</option>
+                    <option value="Belice">Belice</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                  </select>
+                  <label for="residencia">País de Residencía</label>
+                </div>
+
+                <div class="input-field col m6">
+                    <i class="material-icons prefix">calendar</i>
+                    <label for="fecha" >Fecha Nacimiento</label>
+                    <input type="date"  id="fecha" class="validate" required>
+                  </div>
+
+                <div class="input-field col m12">
+                    <i class="material-icons prefix">mail</i>
+                    <label for="mail">Email</label>
+                    <input type="email"  id="mail" class="validate" required>
+                  </div>
+                
+                  <div class="input-field col m6">
+                    <i class="material-icons prefix">phone</i>
+                    <label for="telefono" >Telefono Casa</label>
+                    <input type="tel"  id="telefono" class="validate" required>
+                  </div> 
+                  <div class="input-field col m6">
+                    <i class="material-icons prefix">phone</i>
+                    <label for="celular" >Telefono Celular</label>
+                    <input type="tel"  id="celular" class="validate" required>
+                  </div>
+
+                  
+               
+                        
+                <div class="input-field col m12">
+                  <i class="material-icons prefix">home</i>
+                  <label for="domicilio" >Domicilio</label>
+                  <input type="text"  id="domicilio" class="validate" required>
+                </div>
+                        
+                <div class="center-align m6">
+                  <button name="btnSend" id="btnSend" value="Matricular" type="submit" class="waves-effect waves-light btn">
+                    <i class="material-icons right">send</i>ENVIAR
+                  </button>
+                </div>
+                <br>
+            </form>
+            </div>
+          </article>
+        </div>
+      </div>
+      
+            <input name="tabs blue" id="tab2" type="radio">
+            <label for="tab2">Alumno matriculado</label>
+            <div id="tab-content2" class="tab-content">
+            <div id="infomatricula"></div>
+            </div>
+          
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
+<script src='https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js'></script>
+<script src='https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js'></script>
+<script  src="js/script.js"></script>
+<script  src="js/Registro.js"></script>
+</html>
